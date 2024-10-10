@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-shelhen-purpose</title>
+	<!-- 引入facicon.ico网页图标 -->
+	<!-- <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>     -->
+	<!-- 引入css 初始化的css 文件 -->
+    <style>
+        /*清除元素默认的内外边距  */
+        * {margin: 0; padding: 0;}
+        /*让所有斜体 不倾斜*/
+        em, i { font-style: normal;}
+        /*取消链接的下划线*/
+        a { color: #666; text-decoration: none;}
+        a:hover {color: #e33333;}
+        body {
+            font-size: 14px;
+            line-height: 22px;
+            font-family: Arial, sans-serif;
+        }
+        /*图片没有边框   去掉图片底侧的空白缝隙*/
+        img {
+            border: 0;  /*ie6*/
+            vertical-align: middle;
+        }
+        /*让button 按钮 变成小手*/
+        button {
+            cursor: pointer;
+        }
+        .hide, .none {
+            display: none;
+        }
+        .container {
+            position: relative;
+        	width: 900px;
+        	margin: 50px auto;
+            padding: 50px 90px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* display: flex; */
+            background-color: #fff;
+            overflow: hidden;
+        }
+        .top{
+            margin: 0px 200px;
+            width: 500px;
+        }
+        .name{
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+        }
+        .name span{
+            margin-right: 10px; /* 调整这里的数值改变间距大小 */
+        }
+        h2{
+            font-size: 24px;
+            margin: 8px 0px 8px 0px;
+            color: #000;
+            border-bottom: 2px solid #000;
+            padding-bottom: 8px;
+        }
+        .section{
+            margin: 10px 0px;
+            font-size: 15px;
+        }
+        .section h3{
+            font-size: 17px;
+            font-weight: normal;
+            line-height: 1.5;
+            text-align: center;
+        }
+        .section h3 span{display: inline-block;margin-bottom: 3px;}
+        .section h3 span:first-child{text-align: left;}
+        /* .section h3 span:last-child{text-align: right;} */
+        ul{
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.8px;
+            margin: 5px 0px 0px 20px;
+        }
+        ul span{
+            font-weight: bold;
+        }
+        ul li b{
+            margin: 0px 15px;
+        }
+        .qrcode {
+            position: absolute;
+            left: 100px;
+            top: 25px;
+        }
+       .photo {
+            position: absolute;
+            right: 100px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="qrcode">
+                <img src="./qrcode.png" style="width: 110px; height: 110px;" alt="二维码">
+            </div>
+            <div class="photo">
+                <img src="./myphoto.png" style="width: 110px; height: 165px;" alt="证件照">
+            </div>
+            <div class="name" style="font-size: 24px;line-height: 2;">谢恒恒</div>
+            <div class="name">
+                <span>年龄：27</span> <span>学历：硕士研究生(在读)</span>
+            </div>
+            <div class="name">
+                <span>邮箱：shelhen@163.com</span> <span>手机：19352409925</span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="section">
+                <h2>教育背景</h2>
+                <h3>
+                    <span style="width: 290px;">2018.9~2022.6</span>
+                    <span style="width: 290px;">盐城工学院</span>
+                    <span style="width: 290px;">电子商务（普本）</span>
+                </h3>
+                <h3>
+                    <span style="width: 290px;">2022.9~2025.6</span>
+                    <span style="width: 290px;">江苏师范大学</span>
+                    <span style="width: 290px;">管理科学与工程（学硕）</span>
+                </h3>
+                <ul>
+                    <li><span>核心课程：</span>管理学；运筹学；统计学；西方经济学；计量经济学；市场营销；系统工程；供应链管理；电子商务策划...</li>
+                    <li><span>英语水平：</span>CET6，读写能力良好，听说能力一般。</li>
+                    <li><span>个人实践：</span>班级班长(本)；学院学生会办公室副部长(本)；主持校级大创项目两项(本)；主持江苏省科研项目一项(硕)。</li>
+                    <li><span>所获证书：</span>计算机二级office；计算机二级python；BBDA初级大数据分析师。</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>荣誉奖项</h2>
+                <ul>
+                    <li>本硕期间获校一等、二等、三等、国家励志奖学金若干次，累计奖学金4万余元。</li>
+                    <li>本硕期间获优秀团员、优秀学生干部等称号若干次;</li>
+                    <li>第十届全国大学生电子商务创新、创意及创业挑战赛<b>江苏省特等奖</b>(2020.8)</li>
+                    <li>第九、十届全国大学生统计建模大赛<b>研究生组 江苏赛区三等奖</b>(2023/2024.8)</li>
+                    <li>第二届CMAU全国大学生市场研究与商业策划大赛<b>研究生组 华东赛区一等经暨全国总决赛三等奖</b>(2023.8)</li>
+                    <li>第二届全国大学生大数据分析技术技能大赛<b>研究生组 江苏省一等奖暨全国总决赛二等奖</b>(2023.11)</li>
+                    <li>第十四届“正大杯”全国大学生市场调查与分析大赛<b>研究生组 江苏赛区一等奖</b>(2024.4)</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>实习/项目经历</h2>
+                <h3 style="margin-top: 5px;">
+                    <span style="width: 100px;">2024.4~2024.8</span>
+                    <span style="width: 560px;">震坤行工业超市（上海）有限公司</span>
+                    <span style="width: 230px;">爬虫实习生</span>
+                </h3>
+                <ul>
+                    <li><span></span>负责垂域大语言模型预训练数据的爬取与清洗；</li>
+                    <li><span></span>维护公司现有爬虫项目和已爬取的数据资源，包括代码的定期维护，数据的提取与预处理等；</li>
+                    <li><span></span>按要求完成其他针对性工作，如开发京东验证码处理脚本、友商商品比价脚本、结合大模型开发数据特征提取脚本等；</li>
+                    <li><span></span>根据业务需求开发新的爬虫项目，基于scrapy-redis独立开发amazon/larborfreight/uline等海外竞品爬虫项目，基于Selenium/Playwright开发京东数据采集项目，其中涉及多种反爬手段的处理策略。</li>
+                </ul>
+                <h3 style="margin-top: 10px;">
+                    <span style="width: 100px;">2023.4~2024.4</span>
+                    <span style="width: 560px;">基于XGBoost-SHAP模型的数字化制造业综合绩效评价研究</span>
+                    <span style="width: 230px;">省研究生科研项目（主持人）</span>
+                </h3>
+                <ul>
+                    <li><span>项目简介：</span>将可解释性机器学习模型引入企业绩效评价研究中，借助shaply方法对模型解释分析。</li>
+                    <li><span>方法工具：</span>网络爬虫；Paddle OCR；正则表达式；因子分析；极限梯度提升算法；可解释性机器学习。</li>
+                    <ul>
+                        结合现有文献构建数字化企业绩效评价指标体系，结构化的财务数据借助pandas进行预处理，非结构化的pdf和图片数据借助OCR与正则技术提取与清洗；借助因子分析计算数字化企业期望绩效，利用XGBoost算法构建数字化企业绩效评价模型。基于shaply方法对评价结果进行解释分析与讨论。
+                    </ul>
+                </ul>
+                <h3 style="margin-top: 10px;">
+                    <span style="width: 100px;">2023.8~2024.4</span>
+                    <span style="width: 560px;">基于文本挖掘的徐州市汉文化景区游客满意度调查研究</span>
+                    <span style="width: 230px;">“正大杯”市调大赛(主持人)</span>
+                </h3>
+                <ul>
+                    <li><span>项目简介：</span>结合文本挖掘和问卷调查分析充分研究影响游客满意度的机理机制。</li>
+                    <li><span>方法工具：</span>网络爬虫；文本挖掘；LDA文本聚类；情感分析；结构方程模型；数据可视化。</li>
+                    <ul>
+                        爬取知名旅游平台游客评论数据构建文本语料库，语料清洗后，借助gensim模块构建LDA文本聚类模型根据评论主题分析游客情感。形成设计调查方案并实施调查。
+                        问卷调查的结果不仅规范使用描述性统计分析，还借助系统聚类构建游客画像，借助semopy构建结构方程模型分析影响游客满意度的机制机理，最终借助matplotlib等模块生成可视化结果，撰写调查分析报告。
+                    </ul>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>技能和语言</h2>
+                <ul>
+                    <li><span>算法和编程：</span>掌握常用的数据结构和算法；熟练掌握 Python 基础以及常用库的使用；对多任务编程与网络编程有深入的了解，具备良好的问题分析和代码调试能力，能够独立进行环境管理。</li>
+                    <li><span>网络爬虫：</span>熟悉HTTP 协议和浏览器组成原理，熟悉各类爬虫开发模块与数据解析模块，具备基本的抓包调试能力，能够处理断点、Hook、补环境、反混淆等反爬策略，了解分布式爬虫的构建原理。</li>
+                    <li><span>数据挖掘：</span>熟练使用 Pandas、NumPy、Matplotlib等数据处理模块，了解因子分析、聚类分析、结构方程模型等多元统计分析方法，了解基本的机器学习和数据挖掘知识，能够基于sklearn进行机器学习建模。</li>
+                    <li><span>开发工具：</span>PyCharm、VScode等开发工具的使用，熟悉Fiddler，了解Docker 部署和Git的使用。</li>
+                    <li><span>数据库：</span>掌握 MySQL和Redis 数据库的基本使用。</li>
+                    <li><span>Web开发：</span>了解 Linux 操作系统和常用命令，了解Vue框架和Django框架。</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
